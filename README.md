@@ -1,6 +1,6 @@
 # Quickstart for Node.js in the App Engine flexible environment
 
-## FORKED from https://raw.githubusercontent.com/GoogleCloudPlatform/nodejs-docs-samples
+## FORKED from https://github.com/GoogleCloudPlatform/nodejs-docs-samples
 
 This is the sample application for the
 [Quickstart for Node.js in the App Engine flexible environment][tutorial]
