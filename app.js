@@ -27,6 +27,14 @@ app.get('/', (req, res) => {
     .end();
 });
 
+app.get('/status/:code', (req, res) => {
+  const code = parseInt(request.params.code) || 500;
+  res
+    .status(code)
+    .send('Error Occured.')
+    .end();
+});
+
 // Start the server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
