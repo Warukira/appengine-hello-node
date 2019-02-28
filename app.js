@@ -15,7 +15,7 @@
 
 'use strict';
 require('@google-cloud/trace-agent').start();
-require('@google-cloud/debug-agent').start();
+require('@google-cloud/debug-agent').start({ allowExpressions: true });
 
 // [START gae_flex_quickstart]
 const express = require('express');
