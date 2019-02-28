@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/status/:code', (req, res) => {
-  const code = parseInt(request.params.code) || 500;
+  const code = parseInt(req.params.code) || 500;
   res
     .status(code)
     .send('Error Occured.')
