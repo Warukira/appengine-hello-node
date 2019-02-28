@@ -13,7 +13,7 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "deploy": "gcloud app deploy",
+    "deploy": "gcloud beta app deploy",
     "start": "node app.js",
     "system-test": "repo-tools test app",
     "test": "npm run system-test",
