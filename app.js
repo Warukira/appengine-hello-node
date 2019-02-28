@@ -33,7 +33,16 @@ app.get('/status/:code', (req, res) => {
   const code = parseInt(req.params.code) || 500;
   res
     .status(code)
-    .send('Error Occured.')
+    .send(`Status Code: ${code}`)
+    .end();
+});
+
+app.get('/error', (req, res) => {
+  const error = new Error('Internal occured');
+  console.log(error)
+  res
+    .status(500)
+    .send('500: Internal Error')
     .end();
 });
 
